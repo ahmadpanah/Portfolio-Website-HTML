@@ -34,3 +34,27 @@ header{
     align-items: center;
     z-index: 100;
 }
+
+.logo{
+    font-size: 3rem;
+    color: #100a90;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.5s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #45da0a;
+    border-bottom: 3px solid #fff;
+    border-top: 5px solid #d80909;
+}
