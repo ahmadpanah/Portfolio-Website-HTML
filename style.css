@@ -45,7 +45,7 @@ header{
 
 nav a{
     font-size: 1.8rem;
-    color: #fff;
+    color: #b1fc00;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.5s ease;
@@ -56,4 +56,8 @@ nav a:hover,
 nav a.active{
     color: #45da0a;
     border-bottom: 3px solid #fff;
+}
+
+@media(max-width:995px){
+    
 }
