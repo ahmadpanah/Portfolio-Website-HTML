@@ -56,5 +56,4 @@ nav a:hover,
 nav a.active{
     color: #45da0a;
     border-bottom: 3px solid #fff;
-    border-top: 5px solid #d80909;
 }
