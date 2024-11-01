@@ -1,23 +1,25 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: "B Yekan";
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
-    font-size: 62%;
+    font-size: 62.5%;
 }
 
 body{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: white;
 }
 
 header{
@@ -27,9 +29,9 @@ header{
     left: 0;
     width: 100%;
     padding: 1rem 9%;
+    background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
-    background-color: transparent;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -37,44 +39,51 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #100a90;
+    color: #1e1ed5;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
 }
 
+.logo:hover{
+    transform: scale(1.1);
+}
+
 nav a{
     font-size: 1.8rem;
-    color: #b1fc00;
+    color: white;
     margin-left: 4rem;
     font-weight: 500;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
 nav a:hover,
 nav a.active{
-    color: #45da0a;
-    border-bottom: 3px solid #fff;
+    color: #b74b4b;
+    border-bottom: 3px solid #1e1ed5;
 }
 
 @media(max-width:995px){
-    nav {
+    nav{
         position: absolute;
-        top: 100%;
+        display: none;
+        top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #17069a;
-        border-bottom: 3px solid #17069a;
+        border-left: 3px solid #1e1ed5;
+        border-bottom: 3px solid #1e1ed5;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
+
     nav.active{
         display: block;
     }
-    nav a {
+
+    nav a{
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
@@ -84,36 +93,35 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #100a90;
+        border-bottom: 0.5rem solid #1e1ed5;
     }
 }
 
- section{
-    min-height: 100vh; 
+section{
+    min-height: 100vh;
     padding: 5rem 9% 5rem;
- }
+}
 
- .home{
+.home{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #0f1228;
- }
+    background-color: black;
+}
 
- .home .home-content h1{
+.home .home-content h1{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
- }
+}
 
- span{
-    color: #2745d8;
- }
+span{
+    color: #1e1ed5;
+}
 
- .home-content h3 {
+.home-content h3{
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
- }
- 
+}
