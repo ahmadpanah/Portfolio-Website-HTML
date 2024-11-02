@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,11 +10,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ body{
     color: white;
 }
 
-header{
+header {
     margin-top: 20px;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ header{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     color: #1e1ed5;
     font-weight: 800;
@@ -45,11 +45,11 @@ header{
     transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
 }
 
-nav a{
+nav a {
     font-size: 1.8rem;
     color: white;
     margin-left: 4rem;
@@ -59,13 +59,13 @@ nav a{
 }
 
 nav a:hover,
-nav a.active{
+nav a.active {
     color: #b74b4b;
     border-bottom: 3px solid #1e1ed5;
 }
 
-@media(max-width:995px){
-    nav{
+@media(max-width:995px) {
+    nav {
         position: absolute;
         display: none;
         top: 0;
@@ -76,33 +76,33 @@ nav a.active{
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     }
 
-    nav.active{
+    nav.active {
         display: block;
     }
 
-    nav a{
+    nav a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
 
     nav a:hover,
-    nav a.active{
+    nav a.active {
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #1e1ed5;
     }
 }
 
-section{
+section {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
 
-.home{
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,31 +110,31 @@ section{
     background-color: black;
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-span{
+span {
     color: #1e1ed5;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.6rem;
 }
 
-.home-img{
+.home-img {
     border-radius: 50%;
 }
 
-.home-img img{
+.home-img img {
     position: relative;
     width: 32vw;
     border-radius: 50%;
@@ -143,12 +143,12 @@ span{
     transition: 0.2s linner;
 }
 
-.home-img img:hover{
+.home-img img:hover {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.social-icons a{
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -162,14 +162,14 @@ span{
     color: #1e1ed5;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: black;
     transform: scale(1.3) translateY(-5px);
     background-color: #1e1ed5;
     box-shadow: 0 0 25px #1e1ed5;
 }
 
-.btn{
+.btn {
     display: inline-flex;
     padding: 1rem 2.8rem;
     background-color: #fff;
@@ -183,30 +183,30 @@ span{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale3d(1.03);
     background-color: #2f2fd8;
     color: black;
     box-shadow: 0 0 25px #1e1ed5;
 }
 
-.typing-text{
+.typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
 }
 
-.typing-text span{
+.typing-text span {
     position: relative;
 }
 
-.typing-text span::before{
+.typing-text span::before {
     content: "Student";
     color: #cbf913;
     animation: words 20s infinite;
 }
 
-.typing-text span::after{
+.typing-text span::after {
     content: "";
     background-color: black;
     position: absolute;
@@ -217,8 +217,61 @@ span{
     animation: cursor 0.6s infinite;
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 3px solid #1e1ed5;
     }
 }
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Developer";
+    }
+
+    21%,
+    40% {
+        content: "Writer";
+    }
+
+    41%,
+    60% {
+        content: "Poet";
+    }
+
+    61%,
+    80% {
+        content: "Youtuber";
+    }
+
+    81%,
+    100% {
+        content: "Gamer";
+    }
+}
+
+@media(max-width:1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px) {
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+
