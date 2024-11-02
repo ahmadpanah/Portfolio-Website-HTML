@@ -125,3 +125,100 @@ span{
     margin-bottom: 1rem;
     font-weight: 700;
 }
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #1e1ed5;
+    cursor: pointer;
+    transition: 0.2s linner;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #1e1ed5;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #1e1ed5;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #1e1ed5;
+    box-shadow: 0 0 25px #1e1ed5;
+}
+
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background-color: #fff;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #051a39b0;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #2f2fd8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #2f2fd8;
+    color: black;
+    box-shadow: 0 0 25px #1e1ed5;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Student";
+    color: #cbf913;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 8px);
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #1e1ed5;
+    }
+}
